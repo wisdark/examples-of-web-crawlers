@@ -5,7 +5,6 @@
     <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers"><img src="https://img.shields.io/badge/status-updating-brightgreen.svg"></a>
     <a href="https://github.com/python/cpython"><img src="https://img.shields.io/badge/Python-3.7-FF1493.svg"></a>
     <a href="https://opensource.org/licenses/mit-license.php"><img src="https://badges.frapsoft.com/os/mit/mit.svg"></a>
-    <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers"><img src="https://img.shields.io/github/repo-size/shengqiangzhang/examples-of-web-crawlers"></a>
     <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers/graphs/contributors"><img src="https://img.shields.io/github/contributors/shengqiangzhang/examples-of-web-crawlers?color=blue"></a>
     <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers/stargazers"><img src="https://img.shields.io/github/stars/shengqiangzhang/examples-of-web-crawlers.svg?logo=github"></a>
     <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers/network/members"><img src="https://img.shields.io/github/forks/shengqiangzhang/examples-of-web-crawlers.svg?color=blue&logo=github"></a>
@@ -13,11 +12,25 @@
 </p>
 <br />
 
-
-## 简介
+## 项目简介
 一些常见的网站爬虫例子，代码通用性较高，时效性较久。**项目代码对新手比较友好**，尽量用简单的python代码，并配有大量注释。
 
 
+
+
+
+<br />
+<br />
+
+## 如何下载
+
+没有或不懂如何设置代理的![chinese_flag](./chinese_flag.png)**中国用户**, 可跳转至镜像仓库[码云Gitee](https://gitee.com/shengqiangzhang/examples-of-web-crawlers)进行下载, 以便获得较快的下载速度。
+
+
+
+
+
+<br />
 <br />
 
 ## [1.淘宝模拟登录][taobao_login]
@@ -497,13 +510,42 @@ python app.py
 <br />
 <br />
 
-## 如何下载
 
-本仓库大小为<a href="https://github.com/shengqiangzhang/examples-of-web-crawlers"><img src="https://img.shields.io/github/repo-size/shengqiangzhang/examples-of-web-crawlers"></a>, 为提高下载速度, 建议使用代理服务器下载。
+## [12.一键导出微信读书的书籍和笔记][weread]
+
+> 本项目基于[@arry-lee](https://github.com/arry-lee)的项目[wereader](https://github.com/arry-lee/wereader/issues/20)修改而来，感谢原作者提供的源代码。
 
 <br />
 
-没有或不懂如何设置代理服务器的![chinese_flag](./chinese_flag.png)**中国用户**, 请跳转至本仓库同步镜像[码云Gitee](https://gitee.com/shengqiangzhang/examples-of-web-crawlers)进行下载, 以便获得较快的下载速度。
+### 简介
+
+全民阅读的时代已经来临，目前使用读书软件的用户数2.1亿，日活跃用户超过500万，其中19-35岁年轻用户占比超过60%，本科及以上学历用户占比高达80%，北上广深及其他省会城市/直辖市用户占比超过80%。**本人习惯使用微信读书，为了方便整理书籍和导出笔记，便开发了这个小工具。**
+
+
+### 功能截图
+
+在开始写代码思路之前，我们先看看最终生成的效果。
+
+![](12.一键导出微信读书的书籍和笔记/demo1.png)
+![](12.一键导出微信读书的书籍和笔记/demo2.png)
+![](12.一键导出微信读书的书籍和笔记/demo3.png)
+
+
+### 如何运行
+
+```bash
+# 跳转到当前目录
+cd 目录名
+# 先卸载依赖库
+pip uninstall -y -r requirement.txt
+# 再重新安装依赖库
+pip install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+# 开始运行
+python pyqt_gui.py
+```
+
+
+
 
 
 
@@ -549,6 +591,8 @@ python app.py
 
 [chrome_history_data]:https://github.com/shengqiangzhang/examples-of-web-crawlers/tree/master/11.%E4%B8%80%E9%94%AE%E5%88%86%E6%9E%90%E4%BD%A0%E7%9A%84%E4%B8%8A%E7%BD%91%E8%A1%8C%E4%B8%BA(web%E9%A1%B5%E9%9D%A2%E5%8F%AF%E8%A7%86%E5%8C%96)
 
+[weread]:https://github.com/shengqiangzhang/examples-of-web-crawlers/tree/master/12.%E4%B8%80%E9%94%AE%E5%AF%BC%E5%87%BA%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E7%9A%84%E4%B9%A6%E7%B1%8D%E5%92%8C%E7%AC%94%E8%AE%B0
+
 
 [1]:https://www.google.com/chrome/
 [2]:http://chromedriver.storage.googleapis.com/index.html
@@ -559,5 +603,3 @@ python app.py
 [7]:https://raw.githubusercontent.com/shengqiangzhang/examples-of-web-crawlers/master/3.%E6%B7%98%E5%AE%9D%E5%B7%B2%E4%B9%B0%E5%88%B0%E7%9A%84%E5%AE%9D%E8%B4%9D%E6%95%B0%E6%8D%AE%E7%88%AC%E8%99%AB(%E5%B7%B2%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95)/example.gif
 [8]:http://paper.meiyuan.in/
 [9]:http://chromedriver.storage.googleapis.com/index.html
-
-
